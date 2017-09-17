@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Thoughts while I learn stuff</title>
+    <link>https://objectuser.github.io/posts/</link>
+    <description>Recent content in Posts on Thoughts while I learn stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Sep 2017 09:48:47 -0600</lastBuildDate>
+    
+	<atom:link href="https://objectuser.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postgres Partial Indexes</title>
+      <link>https://objectuser.github.io/posts/postgres-partial-indexes/</link>
+      <pubDate>Sun, 17 Sep 2017 09:48:47 -0600</pubDate>
+      
+      <guid>https://objectuser.github.io/posts/postgres-partial-indexes/</guid>
+      <description>I have a large Postgres database that backs some data services used by a few other apps. This database is not large by Postgres standards, having about 600M rows.
+I did some reading on Postgres indexes and decided that a series of partial indexes would likely provide the best performance for our variety of queries. However, I was confused that while my analysis revealed that the indexes I created would serve those queries well, Postgres never seemed to use them.</description>
+    </item>
+    
+  </channel>
+</rss>
