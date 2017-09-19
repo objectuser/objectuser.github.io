@@ -6,10 +6,20 @@
     <description>Recent content on Thoughts while I learn stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2017 09:48:47 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 10:30:00 -0600</lastBuildDate>
     
 	<atom:link href="https://objectuser.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Where Rails Does the Wrong Thing</title>
+      <link>https://objectuser.github.io/posts/where-rails-does-the-wrong-thing/</link>
+      <pubDate>Tue, 19 Sep 2017 10:30:00 -0600</pubDate>
+      
+      <guid>https://objectuser.github.io/posts/where-rails-does-the-wrong-thing/</guid>
+      <description>I don&amp;rsquo;t have a lot of experience in Rails. I&amp;rsquo;ve used it over the last year, but most of my time during that period has been in Elixir.
+Recently, due to how Postgres partial indexes work, I wanted to replace some parameter markers in my queries with manifest (i.e., hard coded) values. This was only for things like processing states and the like. I still wanted values like keys and dates to be parameterized for DB efficiency.</description>
+    </item>
     
     <item>
       <title>Postgres Partial Indexes</title>
