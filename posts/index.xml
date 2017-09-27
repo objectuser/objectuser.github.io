@@ -13,30 +13,30 @@
     
     <item>
       <title>Unbalanced Postgres Partitions</title>
-      <link>https://objectuser.github.io/posts/unbalanced-postgres-partitions/</link>
+      <link>https://objectuser.github.io/posts/2017-09-27-unbalanced-postgres-partitions/</link>
       <pubDate>Wed, 27 Sep 2017 13:00:00 -0600</pubDate>
       
-      <guid>https://objectuser.github.io/posts/unbalanced-postgres-partitions/</guid>
+      <guid>https://objectuser.github.io/posts/2017-09-27-unbalanced-postgres-partitions/</guid>
       <description>I recently needed to partition a large table in Postgres. The table is approaching 500M rows. It had a sufficient number of rows that I was not able to create an index without running out of temporary storage on my cloud-hosted server.
 Most of my reading on Postgres partitioning talked about partitioning by date. However, few of my queries are of the &amp;ldquo;recent rows&amp;rdquo; variety, so that didn&amp;rsquo;t seem like an optimal approach.</description>
     </item>
     
     <item>
       <title>Where Rails Does the Wrong Thing</title>
-      <link>https://objectuser.github.io/posts/where-rails-does-the-wrong-thing/</link>
+      <link>https://objectuser.github.io/posts/2017-09-19-where-rails-does-the-wrong-thing/</link>
       <pubDate>Tue, 19 Sep 2017 10:30:00 -0600</pubDate>
       
-      <guid>https://objectuser.github.io/posts/where-rails-does-the-wrong-thing/</guid>
+      <guid>https://objectuser.github.io/posts/2017-09-19-where-rails-does-the-wrong-thing/</guid>
       <description>I don&amp;rsquo;t have a lot of experience in Rails. I&amp;rsquo;ve used it over the last year, but most of my time during that period has been in Elixir.
 Recently, due to how Postgres partial indexes work, I wanted to replace some parameter markers in my queries with manifest (i.e., hard coded) values. This was only for things like processing states and the like. I still wanted values like keys and dates to be parameterized for DB efficiency.</description>
     </item>
     
     <item>
       <title>Postgres Partial Indexes</title>
-      <link>https://objectuser.github.io/posts/postgres-partial-indexes/</link>
+      <link>https://objectuser.github.io/posts/2017-09-17-postgres-partial-indexes/</link>
       <pubDate>Sun, 17 Sep 2017 09:48:47 -0600</pubDate>
       
-      <guid>https://objectuser.github.io/posts/postgres-partial-indexes/</guid>
+      <guid>https://objectuser.github.io/posts/2017-09-17-postgres-partial-indexes/</guid>
       <description>I have a large Postgres database that backs some data services used by a few other apps. This database is not large by Postgres standards, having about 600M rows.
 I did some reading on Postgres indexes and decided that a series of partial indexes would likely provide the best performance for our variety of queries. However, I was confused that while my analysis revealed that the indexes I created would serve those queries well, Postgres never seemed to use them.</description>
     </item>
