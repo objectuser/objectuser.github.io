@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Thoughts while I learn stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 10:30:00 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 27 Sep 2017 13:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://objectuser.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unbalanced Postgres Partitions</title>
+      <link>https://objectuser.github.io/posts/unbalanced-postgres-partitions/</link>
+      <pubDate>Wed, 27 Sep 2017 13:00:00 -0600</pubDate>
+      
+      <guid>https://objectuser.github.io/posts/unbalanced-postgres-partitions/</guid>
+      <description>I recently needed to partition a large table in Postgres. The table is approaching 500M rows. It had a sufficient number of rows that I was not able to create an index without running out of temporary storage on my cloud-hosted server.
+Most of my reading on Postgres partitioning talked about partitioning by date. However, few of my queries are of the &amp;ldquo;recent rows&amp;rdquo; variety, so that didn&amp;rsquo;t seem like an optimal approach.</description>
+    </item>
     
     <item>
       <title>Where Rails Does the Wrong Thing</title>
