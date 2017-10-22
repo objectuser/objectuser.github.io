@@ -6,10 +6,22 @@
     <description>Recent content on Thoughts while I learn stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2017 13:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 22 Oct 2017 15:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://objectuser.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ecto Migrate To</title>
+      <link>https://objectuser.github.io/posts/2017-10-22-ecto-migrate-to/</link>
+      <pubDate>Sun, 22 Oct 2017 15:00:00 -0600</pubDate>
+      
+      <guid>https://objectuser.github.io/posts/2017-10-22-ecto-migrate-to/</guid>
+      <description>Ecto has a nice feature that allows a target migration to be specified.
+The example is:
+mix ecto.migrate --to 20080906120000  The ID above is the prefix of the migration file name.
+I used this when I had a set of migrations to run, but needed to do intermediate work as each one was applied. This made it really easy.</description>
+    </item>
     
     <item>
       <title>Unbalanced Postgres Partitions</title>
@@ -17,7 +29,7 @@
       <pubDate>Wed, 27 Sep 2017 13:00:00 -0600</pubDate>
       
       <guid>https://objectuser.github.io/posts/2017-09-27-unbalanced-postgres-partitions/</guid>
-      <description>I recently needed to partition a large table in Postgres. The table is approaching 500M rows. It had a sufficient number of rows that I was not able to create an index without running out of temporary storage on my cloud-hosted server.
+      <description>I recently needed to partition a large table in Postgres. The table is approaching 600M rows. It had a sufficient number of rows that I was not able to create an index without running out of temporary storage on my cloud-hosted server.
 Most of my reading on Postgres partitioning talked about partitioning by date. However, few of my queries are of the &amp;ldquo;recent rows&amp;rdquo; variety, so that didn&amp;rsquo;t seem like an optimal approach.</description>
     </item>
     
