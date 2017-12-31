@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://objectuser.github.io/posts/2017-12-31-git-rebase-like-cherry-pick/</loc>
+    <lastmod>2017-12-31T16:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://objectuser.github.io/posts/2017-10-22-ecto-migrate-to/</loc>
     <lastmod>2017-10-22T15:00:00-06:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>https://objectuser.github.io/posts/</loc>
-    <lastmod>2017-10-22T15:00:00-06:00</lastmod>
+    <lastmod>2017-12-31T16:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,7 +45,7 @@
   
   <url>
     <loc>https://objectuser.github.io/</loc>
-    <lastmod>2017-10-22T15:00:00-06:00</lastmod>
+    <lastmod>2017-12-31T16:00:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   

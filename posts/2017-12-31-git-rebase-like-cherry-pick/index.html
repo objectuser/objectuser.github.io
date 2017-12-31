@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Ecto Migrate To</title>
-  <meta property="og:title" content="Ecto Migrate To" />
-  <meta name="twitter:title" content="Ecto Migrate To" />
+  <title>Git Rebase Like Cherry Pick</title>
+  <meta property="og:title" content="Git Rebase Like Cherry Pick" />
+  <meta name="twitter:title" content="Git Rebase Like Cherry Pick" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Thoughts while I learn stuff" />
-  <meta property="og:url" content="https://objectuser.github.io/posts/2017-10-22-ecto-migrate-to/" />
+  <meta property="og:url" content="https://objectuser.github.io/posts/2017-12-31-git-rebase-like-cherry-pick/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -46,31 +46,73 @@
 
 <article class="p-article">
   <header>
-    <h1>Ecto Migrate To</h1>
+    <h1>Git Rebase Like Cherry Pick</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2017-10-22T15:00:00-06:00">
-          Oct 22, 2017
+        <time datetime="2017-12-31T16:00:00-06:00">
+          Dec 31, 2017
         </time>
       </div>
       
     </div>
   </header>
   <section id="js-article" class="p-article__body">
-    <p><a href="https://hexdocs.pm/ecto/Ecto.html">Ecto</a> has a <a href="https://hexdocs.pm/ecto/Mix.Tasks.Ecto.Migrate.html#content">nice
-feature</a>
-that allows a target migration to be specified.</p>
+    <p>Sometimes I want to move a commit between branches. This is easy with
+<code>git cherry-pick</code>.</p>
 
-<p>The example is:</p>
+<p>However, sometimes I want this commit inserted into my branch at a
+specific point. This can be done with an interactive rebase.</p>
 
-<pre><code>mix ecto.migrate --to 20080906120000
+<p>An interactive rebase lists the commits to be applied to the branch with
+respect to, usually, the <code>master</code> branch. I usually use <code>git rebase -i</code>
+to squash commits. But there&rsquo;s nothing magic about the list of commits
+provided by the rebase. You can remove them, add to them, change them,
+whatever.</p>
+
+<p>Let&rsquo;s see an example.</p>
+
+<pre><code>git rebase -i master
 </code></pre>
 
-<p>The ID above is the prefix of the migration file name.</p>
+<p>This invokes your configured editor with the list of commits currently
+in effect for the branch. For example:</p>
 
-<p>I used this when I had a set of migrations to run, but needed to do
-intermediate work as each one was applied. This made it really easy.</p>
+<pre><code>pick aaaa1234
+pick bbbb1234
+pick cccc1234
+</code></pre>
+
+<p>These lines can be edited, deleted, whatever. But new lines can also be
+added. If, for example, I have a commit, <code>dddd1234</code>, and I want to add
+it to the current branch, I can just add it to the list:</p>
+
+<pre><code>pick aaaa1234
+pick bbbb1234
+pick cccc1234
+pick dddd1234
+</code></pre>
+
+<p>When I exit the editing session, those commits will be applied. I can do
+the same sort of thing to delete the commit from any other branch.</p>
+
+<p>In the above example, it&rsquo;s really no different from a cherry pick.
+However, I don&rsquo;t have to apply the commit to the end. I can put it
+anywhere I like:</p>
+
+<pre><code>pick aaaa1234
+pick dddd1234
+pick bbbb1234
+pick cccc1234
+</code></pre>
+
+<p>That can be useful in some situations, especially if I&rsquo;m replacing other commits:</p>
+
+<pre><code>pick aaaa1234
+pick dddd1234
+</code></pre>
+
+<p>Powerful stuff.</p>
 
   </section>
   <footer>
@@ -79,12 +121,11 @@ intermediate work as each one was applied. This made it really easy.</p>
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://objectuser.github.io/posts/2017-12-31-git-rebase-like-cherry-pick/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://objectuser.github.io/posts/2017-09-27-unbalanced-postgres-partitions/">Older</a>
+          <a href="https://objectuser.github.io/posts/2017-10-22-ecto-migrate-to/">Older</a>
           
         </div>
       </div>

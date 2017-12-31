@@ -6,10 +6,21 @@
     <description>Recent content on Thoughts while I learn stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Oct 2017 15:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2017 16:00:00 -0600</lastBuildDate>
     
 	<atom:link href="https://objectuser.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Rebase Like Cherry Pick</title>
+      <link>https://objectuser.github.io/posts/2017-12-31-git-rebase-like-cherry-pick/</link>
+      <pubDate>Sun, 31 Dec 2017 16:00:00 -0600</pubDate>
+      
+      <guid>https://objectuser.github.io/posts/2017-12-31-git-rebase-like-cherry-pick/</guid>
+      <description>Sometimes I want to move a commit between branches. This is easy with git cherry-pick.
+However, sometimes I want this commit inserted into my branch at a specific point. This can be done with an interactive rebase.
+An interactive rebase lists the commits to be applied to the branch with respect to, usually, the master branch. I usually use git rebase -i to squash commits. But there&amp;rsquo;s nothing magic about the list of commits provided by the rebase.</description>
+    </item>
     
     <item>
       <title>Ecto Migrate To</title>
